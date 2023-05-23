@@ -1,4 +1,4 @@
-6+9*/88888--public class SetAndGetVariable {
+public class SetAndGetVariable {
     public static void main(String[] args) throws Exception {
         int A =1;
         int B =3;
@@ -13,22 +13,14 @@
         System.out.println("변경 전:"+A+","+B+","+C+","+D);
         if(B == 3){   //B가 3일때 
               A=forth;
-        }else{
-                C=third;
         }
 
         if(D!=9){//D가 9가 아닐때 
-            B = second;
+            B = C;
         }else{
             B = first;
         }
-            
-        if(D!=9){//D가 9가 아닐때 
-            B = third;
-        }else{
-                B = first;
-        }
-
+    
         if(A==10){ //A가 10일때
             C=third;
         }else{
@@ -39,4 +31,3 @@
         
     }
 }
-47
