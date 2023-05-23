@@ -14,7 +14,7 @@ public class MakingGamebyOneHand {
         second = first; // 첫번째 숫자1 오른쪽 이동(second카드로 이동)
         first = third; //세번째 카드 숫자(2) 첫번째 카드로 이동
         third = second; //3번째 카드에 second카드로 이동시킨 숫자1 오른쪽 이동
-        second = Empty; //임시저장값 두번째카드에 입력
+        second = Empty; //임시저장값 두번째카드에 넣어줌
 
        System.out.println("변경 후: " +first+","+second+","+third);
         //return 0;
