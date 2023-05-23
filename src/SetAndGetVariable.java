@@ -8,11 +8,11 @@ public class SetAndGetVariable {
         int first = 200;
         int second = 30;
         int third = 50;
-        int forth = 10;
+        int fourth = 10;
  
         System.out.println("변경 전:"+A+","+B+","+C+","+D);
         if(B == 3){   //B가 3일때 
-              A=forth;
+              A=fourth;
         }
 
         if(D!=9){//D가 9가 아닐때 
