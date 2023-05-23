@@ -20,5 +20,4 @@ public class MakingGamebyOneHand {
         //return 0;
     }
 
-    
 }
