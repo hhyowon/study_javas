@@ -19,8 +19,7 @@ public class LoopNestedLoops {
             {   System.out.println("for " +  first);
                 for(int second=0; second<first; second=second+1)
                 {       
-                    if(second <= first)
-                    {
+                    if(second <= first) {
                         System.out.print("_?");  
                     }else{
                         break;
