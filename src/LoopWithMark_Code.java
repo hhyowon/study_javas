@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-public class LoopWithMark_Code{
+public class LoopWithMark_Code{ //숫자 4까지 찍기 for문이용
     public static void main(String[] args){
         for(int line=1; line <5; line=line+1)
         {
@@ -11,13 +11,3 @@ public class LoopWithMark_Code{
         }
     }
 
-   /*  public static void main(String[] args){
-        for(int line=1; line <6; line=line+1)
-        {
-            for(int linecount=1; linecount<line; linecount=linecount+1)
-            {
-                System.out.print("?");
-            }
-              System.out.println();
-        }      
-    }*/
