@@ -26,7 +26,6 @@ public class LoopNestedLoops {
                         break;
                     }
                 }
-
                 System.out.println();
             }      
                 System.out.println("end");        
