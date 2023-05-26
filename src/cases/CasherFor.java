@@ -14,7 +14,7 @@ public class CasherFor {
                 for(i=0;i<bucket_price.length;i=i+1){ //가격입력을 위한 for문
                     System.out.print((i+1)+" 번째 가격 :");
                     bucket_price[i] = myObj.nextInt();  //배열에 가격입력값 넣기 
-    
+  
                     if(bucket_price[i] > 100){  //100원 초과일때 
                         System.out.println("100원 초과 0원 적용");  
                         bucket_price[i] = 0;  //0원 적용
