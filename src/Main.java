@@ -10,6 +10,7 @@ public class Main{
             B  = myObj.nextDouble(); 
             System.out.println(A/B); 
 
+            
             //return 0;
         }               
 }
