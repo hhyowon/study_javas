@@ -17,14 +17,12 @@ public class MethodBasics {
             // y = x + 1;  
             // y = F(x);
             MethodBasics methodBasics = new MethodBasics();
-            y = methodBasics.F(x); // 변수에 + 1
-            System.out.println("y = x + 1 ");
+            y = methodBasics.F(x); // 변수 y = x + 1;  
             System.out.println("y = " + y);
 
-            y = methodBasics.F(y);
-            System.out.println("y = y + 1 ");
+            y = methodBasics.F(y);// 변수 y = y + 1;  
             System.out.println("y = " + y);
-           // y = y + 1;  
+         
 
         } catch (Exception e){
             // TODO: handle exception
