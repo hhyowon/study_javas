@@ -4,15 +4,9 @@ public class MethodBasics {
     // // body
     // }
     // x에 +1
-    public int Fx(int x)
+    public int F(int x)
     {
         int result = x + 1;
-        return result;
-    }
-
-    public int F(int y)
-    {
-        int result = y + 1;
         return result;
     }
 
@@ -23,8 +17,13 @@ public class MethodBasics {
             // y = x + 1;  
             // y = F(x);
             MethodBasics methodBasics = new MethodBasics();
-            y = methodBasics.Fx(x); // 변수에 + 1
-            y = methodBasics.F(y); // 변수에 + 1
+            y = methodBasics.F(x); // 변수에 + 1
+            System.out.println("y = x + 1 ");
+            System.out.println("y = " + y);
+
+            y = methodBasics.F(y);
+            System.out.println("y = y + 1 ");
+            System.out.println("y = " + y);
            // y = y + 1;  
 
         } catch (Exception e){
