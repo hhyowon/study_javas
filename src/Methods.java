@@ -56,7 +56,7 @@ public class Methods {
 
               
 
-            System.out.println(a); //출력
+            System.out.println(a); //결과값 출력
 
 
             
