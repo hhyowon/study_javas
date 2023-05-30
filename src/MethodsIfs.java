@@ -1,7 +1,6 @@
 import java.util.Scanner; 
 
 public class MethodsIfs {
-    //와일 무한반복하고 , 0되면 끝나기
     public String iftime(int time){
         String str ="";
         try {
