@@ -34,7 +34,7 @@ public class MethodsIfs {
                     System.out.println("종료합니다.");
                    break; // 무한루프 나가기
                 } else {
-                MethodsIfs  methodsIfs = new MethodsIfs(); // (클래쓰)데이터타입 변수이름 = new 클래스이름 _ function을 호출하기 위해 instants화함
+                MethodsIfs  methodsIfs = new MethodsIfs(); // (클래쓰)데이터타입 변수이름 = new 클래스이름 _ function을 호출하기 위해 인스턴스화함
                 String returnresult = methodsIfs.iftime(time); //값을 넣어줄 새로운 string 변수 선언 후 값 넣음
                 System.out.println(returnresult);
                 }
@@ -43,6 +43,7 @@ public class MethodsIfs {
         } catch (Exception e) {
             // TODO: handle exception
         }
+
     }
     
 }
