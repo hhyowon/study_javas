@@ -4,6 +4,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        //11382 : https://www.acmicpc.net/problem/11382
+        Scanner myObj = new Scanner(System.in); 
+        int A = myObj.nextInt();
+        int B = myObj.nextInt();
+        int C = myObj.nextInt();
+
+        System.out.println(A+B+C);
+
         // 18108 :  https://www.acmicpc.net/problem/18108
         // 불기연도에서 서기연도 출력하는 프로그램 
         // 서기연도 = 불기연도-543년
@@ -24,17 +32,17 @@ public class Main {
         // System.out.println (((A%C)*(B%C))%C);
 
         // 2588 : https://www.acmicpc.net/problem/2588
-        // (세 자리 수) × (세 자리 수) 과정 보이는 프로그램 작성하기
+        // // (세 자리 수) × (세 자리 수) 과정 보이는 프로그램 작성하기
 
-        Scanner myObj = new Scanner(System.in); 
-         int A = myObj.nextInt();
-         int B = myObj.nextInt();
+        // Scanner myObj = new Scanner(System.in); 
+        //  int A = myObj.nextInt();
+        //  int B = myObj.nextInt();
 
-         System.out.println(A*(B%38));
-        
+        //  System.out.println(A*(B%10));
+        //  System.out.println(A*((B%100)/10));
+        //  System.out.println(A*(B/100));
 
-
-
+        //  System.out.println(A*B);
 
         }
     }
