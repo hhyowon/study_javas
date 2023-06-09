@@ -16,6 +16,7 @@ public class Scanners {
         System.out.println(first +","+ second);  
         System.out.println("dd\n");  
         System.out.println("dd");  
+        myObj.close();
         //return 0;
     }
           
