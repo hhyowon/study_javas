@@ -20,14 +20,14 @@ public class ConnectDBs {
                 System.out.println( resultSet.getString("COMPANY_ID")+" "+resultSet.getString("COMPANY"));
             }
 
-            // //SELECT COUNT(*) AS CNT FROM factorys;
-            // query ="SELECT COUNT(*) AS CNT FROM factorys;";
-            // resultSet = statement.executeQuery(query); 
-            // int totalCont = 0;
-            // while(resultSet.next()){
-            //      System.out.println(resultSet.getInt("CNT"));
-            //      totalCont = resultSet.getInt("CNT");
-            // }
+            //SELECT COUNT(*) AS CNT FROM factorys;
+            query ="SELECT COUNT(*) AS CNT FROM factorys;";
+            resultSet = statement.executeQuery(query); 
+            int totalCont = 0;
+            while(resultSet.next()){
+                 System.out.println(resultSet.getInt("CNT"));
+                 totalCont = resultSet.getInt("CNT");
+            }
             
             // INSERT INTO factorys (COMPANY_ID, COMPANY) VALUE('CAR-01','AUDI');
             String companyID ="CAR-01";
@@ -40,8 +40,9 @@ public class ConnectDBs {
            
             
             //update factorys SET COMPANY ='페라리' WHERE COMPANY_ID ='CAR-01';
+            String upcompany ="페라리";
             query = "UPDATE factorys "+
-                    "SET COMPANY ='페라리'"+
+                    "SET COMPANY ='" + upcompany + "'"+
                     "WHERE COMPANY_ID = '" + companyID + "'";
             count = statement.executeUpdate(query); 
 
@@ -49,15 +50,6 @@ public class ConnectDBs {
             query = "DELETE FROM factories WHERE COMPANY_ID = '" + companyID + "'";
             count = statement.executeUpdate(query); 
             
-            // SELECT COUNT(*) AS CNT FROM factorys;
-            query ="SELECT COUNT(*) AS CNT FROM factorys;";
-            resultSet = statement.executeQuery(query); 
-            int totalCont = 0;
-            while(resultSet.next()){
-                 System.out.println(resultSet.getInt("CNT"));
-                 totalCont = resultSet.getInt("CNT");
-            }
-
 
             System.out.println();
         } catch (Exception e) {
