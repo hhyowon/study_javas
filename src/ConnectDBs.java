@@ -40,14 +40,12 @@ public class ConnectDBs {
            
             
             //update factorys SET COMPANY ='페라리' WHERE COMPANY_ID ='CAR-01';
-            companyID ="CAR-01";
             query = "UPDATE factorys "+
                     "SET COMPANY ='페라리'"+
                     "WHERE COMPANY_ID = '" + companyID + "'";
             count = statement.executeUpdate(query); 
 
             //delete from factorys WHERE COMPANY_ID ='CAR-01';
-            companyID ="CAR-01";
             query = "DELETE FROM factories WHERE COMPANY_ID = '" + companyID + "'";
             count = statement.executeUpdate(query); 
             
