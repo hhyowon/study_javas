@@ -3,12 +3,14 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/**
+surveyApp
+*/
 public class SurveyApp {
     
     public static void main(String[] args) {
         
-        try {
-            // - MySQL workbench 실행 : JDBC
+        try {// - MySQL workbench 실행 : JDBC
             // - User/password와 접속 IP:port 접속
             String url = "jdbc:mysql://127.0.0.1:3306/db_cars";
             String user = "root";
