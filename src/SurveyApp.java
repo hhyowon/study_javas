@@ -12,7 +12,7 @@ public class SurveyApp {
         
         try {// - MySQL workbench 실행 : JDBC
             // - User/password와 접속 IP:port 접속
-            String url = "jdbc:mysql://127.0.0.1:3306/db_cars";
+            String url = "jdbc:mysql://127.0.0.1:3306/db_survey";
             String user = "root";
             String password = "!yojulab*";
 
@@ -21,10 +21,18 @@ public class SurveyApp {
 
             // - query Edit
             Statement statement = connection.createStatement();
-            String query = "SELECT * FROM factorys";
-            ResultSet resultSet = statement.executeQuery(query);
+
+            System.out.println("---통계---");
+            // -- 총 설문자 : 3명
+            String queryB = "SELECT COUNT(*) CNT\n" + //
+                    "FROM (\n" + //
+                    "\tSELECT RESPONDENTS_ID, COUNT(*) CNT\n" + //
+                    "\tFROM statistics\n" + //
+                    "\tgroup by RESPONDENTS_ID\n" + //
+                    "     ) AS T_STATIC\n";
+            ResultSet resultSet = statement.executeQuery(queryB);
             while (resultSet.next()) {
-                System.out.println(resultSet.getString("COMPANY_ID") + resultSet.getString("COMPANY"));
+                System.out.println("총 설문자 : " + resultSet.getString("CNT")+"명");
             }
             
         } catch (Exception e) {
