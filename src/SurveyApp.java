@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 /**
-surveyApp
+surveyapp
 */
 public class SurveyApp {
     
