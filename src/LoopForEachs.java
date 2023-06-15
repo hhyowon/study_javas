@@ -15,25 +15,28 @@ public class LoopForEachs {
             }
 
             // Automobile Company Vehicle Names
-            ArrayList carList = new ArrayList(); 
-            HashMap<String,String> carSpec = new HashMap<String,String>();
-            carSpec.put("CarCompany", "Ford");
+            ArrayList<HashMap> carList = new ArrayList<HashMap>();
+            HashMap<String, String> carSpec = new HashMap<String, String>();
+            carSpec.put("CarCompany","ford");
             carSpec.put("CarName", "Mustang");
             carSpec.put("Year", "2022");
             carList.add(carSpec);
-            
-            carSpec = new HashMap<String,String>();
-            carSpec.put("CarCompany", "Toyota");
+
+            carSpec = new HashMap<String, String>();
+            carSpec.put("CarCompany","Toyota");
             carSpec.put("CarName", "Camry");
             carSpec.put("Year", "2021");
             carList.add(carSpec);
-           
-            carSpec = new HashMap<String,String>();
-            carSpec.put("CarCompany", "Tesla ");
-            carSpec.put("CarName", "Model 3");
+
+            carSpec = new HashMap<String, String>();
+            carSpec.put("CarCompany","Chevrolet");
+            carSpec.put("CarName", "Silverado");
             carSpec.put("Year", "2023");
             carList.add(carSpec);
 
+            for(HashMap<String, String> car:carList){
+                System.out.println(car.get("CarCompany") + car.get("CarNam") + car.get("Year"));
+            }
             System.out.println();
         } catch (Exception e) {
             // TODO: handle exception
