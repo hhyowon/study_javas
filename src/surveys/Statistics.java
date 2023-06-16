@@ -1,8 +1,3 @@
-package surveys;
-
-import java.sql.ResultSet;
-import java.sql.Statement;
-
 
 public class Statistics {
     public int getRespondents(Statement statement){
