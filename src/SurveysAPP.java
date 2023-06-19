@@ -21,10 +21,15 @@ public class SurveysApp {
             String password = "!yojulab*";
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("DB연결 성공\n");
+<<<<<<< HEAD
             // - query Edit 
             Statement statement = connection.createStatement();
 
             
+=======
+            // - query Edit
+            Statement statement = connection.createStatement();
+>>>>>>> 433cd4a1f8dbf024fa70c934183152841306da7a
             System.out.println("--- 설문자 가능 명단 ---");
             // -- 설문자 가능 명단(가입 완료)
             // -- 1. 홍길동, 2.장길산, 3.신사임당, ...
