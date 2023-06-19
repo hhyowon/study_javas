@@ -1,5 +1,6 @@
 import inheritances.ObjectInheritances;
 import vehicles.Bicycle;
+import vehicles.Car;
 import vehicles.MountainBike;
 import vehicles.RoadCycle;
 
@@ -18,9 +19,15 @@ public static void main(String[] args) {
             // MountainBike mountainBike = new MountainBike(6200,"yellow",5);
             // System.out.println();
 
-            RoadCycle roadCycle = new RoadCycle(8000,"pink","예빈");
-            System.out.println( roadCycle.toString());
-            System.out.println();
+            // RoadCycle roadCycle = new RoadCycle(8000,"pink","예빈");
+            // System.out.println( roadCycle.toString());
+    
+        
+            //구현하고 호출하기
+            Car car = new Car();
+            int speed = car.speedUp(1);
+            speed = car.speedDown(2);
+             System.out.println();
         
         } catch (Exception e) {
             // TODO: handle exception
